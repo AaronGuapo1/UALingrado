@@ -5,7 +5,7 @@
   "main": "src/index.js",
   "scripts": {
     "build": "cross-env ENV=prod webpack --config webpack/prod.js ",
-    "start": "cross-env ENV=dev webpack-dev-server --config webpack/base.js --open"
+    "start": "node --max-old-space-size=4096 node_modules/.bin/cross-env ENV=dev webpack-dev-server --config webpack/base.js --open"
   },
   "repository": {
     "type": "git",
