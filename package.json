@@ -5,7 +5,7 @@
   "main": "src/index.js",
   "scripts": {
     "build": "npx browserslist@latest --update-db && webpack --config webpack/base.js",
-    "start": "node --max-old-space-size=4096 node_modules/.bin/cross-env ENV=dev webpack-dev-server --config webpack/base.js --open"
+    "start": "node --max-old-space-size=8192 node_modules/.bin/cross-env ENV=dev webpack-dev-server --config webpack/base.js --open"
   },
   "repository": {
     "type": "git",
