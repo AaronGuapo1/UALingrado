@@ -5,12 +5,14 @@
   "main": "src/index.js",
   "scripts": {
     "build": "npx browserslist@latest --update-db && webpack --config webpack/base.js",
-    "start": "node --max-old-space-size=8192 node_modules/.bin/cross-env ENV=dev webpack-dev-server --config webpack/base.js --open"
+    "start": "node --max-old-space-size=16384 node_modules/.bin/cross-env ENV=dev webpack-dev-server --config webpack/base.js --open"
   },
+
   "repository": {
     "type": "git",
     "url": "git+https://github.com/tonyzhou1890/snowmen-attack.git"
   },
+
   "author": "tonyzhou1890",
   "license": "MIT",
   "licenseUrl": "http://www.opensource.org/licenses/mit-license.php",
